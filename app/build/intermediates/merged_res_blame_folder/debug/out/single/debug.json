@@ -4,12 +4,12 @@
         "source": "C:\\Users\\alper\\AndroidStudioProjects\\android-basics-kotlin-dogglers-app-main\\app\\src\\main\\res\\layout\\grid_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\alper\\AndroidStudioProjects\\android-basics-kotlin-dogglers-app-main\\app\\build\\intermediates\\merged_res\\debug\\drawable_faye.jpg.flat",
-        "source": "C:\\Users\\alper\\AndroidStudioProjects\\android-basics-kotlin-dogglers-app-main\\app\\src\\main\\res\\drawable\\faye.jpg"
-    },
-    {
         "merged": "C:\\Users\\alper\\AndroidStudioProjects\\android-basics-kotlin-dogglers-app-main\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\alper\\AndroidStudioProjects\\android-basics-kotlin-dogglers-app-main\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\alper\\AndroidStudioProjects\\android-basics-kotlin-dogglers-app-main\\app\\build\\intermediates\\merged_res\\debug\\drawable_faye.jpg.flat",
+        "source": "C:\\Users\\alper\\AndroidStudioProjects\\android-basics-kotlin-dogglers-app-main\\app\\src\\main\\res\\drawable\\faye.jpg"
     },
     {
         "merged": "C:\\Users\\alper\\AndroidStudioProjects\\android-basics-kotlin-dogglers-app-main\\app\\build\\intermediates\\merged_res\\debug\\drawable_tzeitel.jpg.flat",

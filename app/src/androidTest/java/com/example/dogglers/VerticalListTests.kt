@@ -17,6 +17,7 @@ package com.example.dogglers
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.repeatedlyUntil
 import androidx.test.espresso.action.ViewActions.swipeUp
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions.scrollToPosition
@@ -34,8 +35,8 @@ import org.junit.runner.RunWith
 class VerticalListTests : BaseTest() {
 
     @get:Rule
-    var activityRule: ActivityScenarioRule<VerticalListActivity>
-            = ActivityScenarioRule(VerticalListActivity::class.java)
+    var activityRule: ActivityScenarioRule<VerticalListActivity> =
+        ActivityScenarioRule(VerticalListActivity::class.java)
 
     @Test
     fun `vertical_scroll_content_at_first_position`() {
@@ -45,15 +46,19 @@ class VerticalListTests : BaseTest() {
     @Test
     fun `vertical_scroll_content_at_last_position`() {
         onView(withId(R.id.vertical_recycler_view))
-                .perform(scrollToPosition<RecyclerView.ViewHolder>(lastPosition))
+            .perform(scrollToPosition<RecyclerView.ViewHolder>(lastPosition))
         onView(withText("Bella")).check(matches(isDisplayed()))
     }
 
     @Test
     fun `vertical_scrolling`() {
-        onView(withId(R.id.vertical_recycler_view))
-                .perform(swipeUp())
-        onView(withText("Faye")).check(matches(isDisplayed()))
+        onView(withId(R.id.vertical_recycler_view)).perform(
+            repeatedlyUntil(
+                swipeUp(),
+                hasDescendant(withText("Faye")),
+                10
+            )
+        )
     }
 
     @Test

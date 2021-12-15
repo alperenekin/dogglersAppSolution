@@ -1,7 +1,7 @@
-com/example/dogglers/databinding/ActivityGridListBinding.java
- com.example.dogglers.databinding.ActivityGridListBinding
 com/example/dogglers/BuildConfig.java
  com.example.dogglers.BuildConfig
+com/example/dogglers/databinding/ActivityGridListBinding.java
+ com.example.dogglers.databinding.ActivityGridListBinding
 com/example/dogglers/databinding/ActivityMainBinding.java
  com.example.dogglers.databinding.ActivityMainBinding
 com/example/dogglers/databinding/ActivityVerticalListBinding.java
